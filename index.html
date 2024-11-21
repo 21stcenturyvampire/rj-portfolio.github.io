@@ -13,10 +13,10 @@
         <img src="./assets/profile.jpg" alt="My Profile Picture" class="circle-img">
         <nav>
             <ul class="nav-link">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="link">Home</a></li>
+                <li><a href="#about" class="link">About</a></li>
+                <li><a href="#skills" class="link">Skills</a></li>
+                <li><a href="#contact" class="link">Contact</a></li>
             </ul>
         </nav>
         <div class="footer">
@@ -31,7 +31,7 @@
                 <h1 class="title">Hello, I'm</h1>
                 <h1 class="name">REGITA JULIA FIANTI</h1>
                 <p class="text-p1">Data Annotation & QA Software</p>
-                <button class="btn" onclick="location.href='./#contact'">Contact Me</button>
+                <button class="btn link" onclick="location.href='./#contact'">Contact Me</button>
                 <div>
                     <img src="./assets/ig.png" alt="Instagram Account" class="icon" onclick="location.href='https://instagram.com/21stcenturyvampire_'">
                     <img src="./assets/gh.png" alt="Github Account" class="icon" onclick="location.href='https://github.com/21stcenturyvampire'">
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="text-container">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ullam commodi molestias vel nulla? Expedita unde odit nulla quam voluptatem.</p>
+                        <p>Hi again, my name is <b>Regita Julia Fianti</b> my college ID is <b>202333500003</b> and I'm from S3A class. The Portfolio is for my Project Class (Web Programming Basic) and this section is about me so I put a console game because I love playing Video Games. Okay that's all about, thankyou..</p>
                     </div>
                 </div>
             </div>
@@ -71,6 +71,10 @@
                 <div class="detail-skills">
                     <h2>Professional Skills</h2>
                     <div class="skills-container">
+                        <article>
+                            <h4>HTML</h4>
+                            <p>Experienced</p>
+                        </article>
                         <article>
                             <h4>PHP</h4>
                             <p>Experienced</p>
@@ -103,31 +107,48 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <p>"Talk is cheap. Show me the CODE."</p>
+                <p>Linus Torvalds</p>
+            </div>
           </section>
           <!-- CONTACT -->
            <section id="contact">
             <p class="text-p1">Contact Informaton</p>
             <h1 class="name">Find Me Here</h1>
                 <div class="container">
-                    <img src="./assets/coffee.jpg" alt="Coffee Image" class="coffee">
+                    <img src="./assets/coffee.jpg" alt="Coffee Image" class="img-coffee">
                     <div class="contact-info">
                         <h3>Contact Information</h3>
                         <div class="contact">
-                            <img src="./assets/mail.png" alt="Mail Contact" class="icon contact-icon">
+                            <img src="./assets/mail.png" alt="Mail Contact" class="icon">
                             <a href="mailto:rjeff8770@gmail.com?subject=Nice%20Portfolio&body=Hello%20Re,%20how%20are%20you%20today?" target="_blank">rjeff8770@gmail.com</a>
                         </div>
                         <div class="contact">
-                            <img src="./assets/whatsapp.png" alt="WhatsApp Contact" class="icon contact-icon">
+                            <img src="./assets/whatsapp.png" alt="WhatsApp Contact" class="icon">
                             <a href="https://wa.me/62859106733776?text=Hello%20Re,%20how%20are%20you%20today?" target="_blank">+62 859-1067-33776</a>
                         </div>
                         <div class="contact">
-                            <img src="./assets/pin.png" alt="Maps Link" class="icon contact-icon">
+                            <img src="./assets/pin.png" alt="Maps Link" class="icon">
                             <a href="https://maps.app.goo.gl/U4aCRWtoSjZebuYEA" target="_blank">Teluk Khomaeni St.</a>
                         </div>
                     </div>
                 </div>
            </section>
-      </main>
-      
-    </body>
-    </html>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyrights &copy; 2024 Regita Julia Fianti - 202333500003. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.link').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('.link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>  
+</body>
+</html>
