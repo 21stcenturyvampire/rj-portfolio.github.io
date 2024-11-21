@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eee;
+}
+html {
+    scroll-behavior: smooth;
+}
+p {
+    color:dimgrey;
+}
+
+/* SIDEBAR */
+header{
+    position: fixed;
+    background-color: white;
+    width: 20%;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+.nav-link {
+    list-style: none;
+    font-size: 1.3rem;
+}
+li {
+    margin: 1rem 0;
+}
+.logo {
+    font-size: 2rem;
+    margin: 2rem;
+}
+.circle-img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: blueviolet 0.5rem solid;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.footer p {
+    position: absolute;
+    left: 2.5rem;
+    bottom: 1.5rem;
+    font-size: 0.7rem;
+}
+
+/* TAG LINK */
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    margin-left: 15rem;
+}
+/* HOME */
+#home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title {
+    font-size: 2rem;
+}
+.name {
+    font-size: 3rem;
+    color: blueviolet;
+}
+.text-p1 {
+    font-size: 2rem;
+}
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+.btn-color {
+    border: black 0.2rem solid;
+}
+.btn:hover {
+    cursor: pointer;
+    background: black;
+    color: blueviolet;
+}
+.icon {
+    height: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+/* ABOUT */
+#about {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 6.5rem;
+}
+.about-img {
+    height: 300px;
+    border-radius: 2rem;
+    box-shadow: 0 1px 10px black;
+    margin-right: 2rem;
+}
+.details-container {
+    display: flex;
+}
+.detail {
+    border: black 0.15rem solid;
+    border-radius: 10%;
+    background-color: white;
+    padding: 2rem;
+    margin: 0 1rem;
+}
+.detail .icon {
+    cursor: default;
+}
+.text-container {
+    text-align: left;
+    margin: 1rem;
+}
+/* SKILLS */
+#skills {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    flex-direction: column;
+}
+.detail-skills {
+    width: 30%;
+    border: black 0.15rem solid;
+    border-radius: 10%;
+    background-color: white;
+    padding: 2rem;
+    margin: 0 2rem;
+}
+article {
+    margin-top: 1rem;
+}
+/* CONTACT */
+#contact {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.coffee {
+    height: 20rem;
+    border-radius: 7%;
+    box-shadow: 0 1px 10px black;
+    margin: 0 2rem;
+}
+.contact-info {
+    align-items: center;
+    border: black 0.15rem solid;
+    background-color: white;
+    border-radius: 7%;
+    padding: 2rem;
+    margin: 0 2rem;
+}
+.contact-info h3 {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    margin-bottom: 1rem;
+}
+.contact {
+    display: flex;
+    align-items: center;
+}
