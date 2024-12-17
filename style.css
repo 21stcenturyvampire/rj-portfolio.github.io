@@ -47,7 +47,7 @@ li {
 }
 .footer p {
     position: absolute;
-    left: 27px;
+    left: 30px;
     bottom: 15px;
     font-size: 10px;
 }
@@ -84,6 +84,22 @@ main {
 .title {
     font-size: 30px;
 }
+.btn-resume {
+    font-weight: 600;
+    padding: 15px;
+    margin: 15px;
+    width: 150px;
+    border-radius: 30px;
+    border: black 5px solid;
+    background-color: black;
+    color: white;
+    transition: all 300ms;
+}
+.btn-resume:hover {
+    cursor: pointer;
+    background: #eee;
+    color: black;
+}
 .btn {
     font-weight: 600;
     padding: 15px;
@@ -95,8 +111,9 @@ main {
 }
 .btn:hover {
     cursor: pointer;
-    background: black;
-    color: blueviolet;
+    border: black 5px solid;
+    background: dimgray;
+    color: white;
 }
 .icon {
     height: 35px;
